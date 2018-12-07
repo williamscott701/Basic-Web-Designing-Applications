@@ -1,0 +1,40 @@
+<body bgcolor="#FFFFCC">
+	<table border="1" align="center" width="50%">
+		<tr>
+			<th width="25%"> Variable Name </th>
+			<th width="75%"> Result </th>
+		</tr>
+		<tr>
+			<td> Remote Address </td>
+			<td> <!--#echo var="REMOTE_ADDRESS" --> </td>
+		</tr>
+		<tr>
+			<td> Remote Host </td>
+			<td> <!--#echo var="REMOTE_HOST" --> </td>
+		</tr>
+		<tr>
+			<td> Remote User </td>
+			<td> <!--#echo var="REMOTE_USER" --> </td>
+		</tr>
+		<tr>
+			<td> HTTP Accept </td>
+			<td> <!--#echo var="HTTP_ACCEPT" --> </td>
+		</tr>
+		<tr>
+			<td> HTTP Accept Language </td>
+			<td> <!--#echo var="HTTP_ACCEPT_LANGUAGE" --> </td>
+		</tr>
+		<tr>
+			<td> HTTP Connection </td>
+			<td> <!--#echo var="HTTP_CONNECTION" --> </td>
+		</tr>
+		<tr>
+			<td> HTTP Host </td>
+			<td> <!--#echo var="HTTP_HOST" --> </td>
+		</tr>
+		<tr>
+			<td> HTTP User Layout </td>
+			<td> <!--#echo var="HTTP_USER_LAYOUT" --> </td>
+		</tr>
+	</table>
+</body>

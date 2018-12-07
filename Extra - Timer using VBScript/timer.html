@@ -1,0 +1,28 @@
+﻿<html>
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=10">
+		<title> Timer </title>
+		<script language="vbscript" type="text/vbscript">
+			a=6
+			sub window_onload()
+				timer()
+			end sub
+
+			function timer()
+				settimeout "timer()",1000
+				a=a-1
+				document.f1.b1.value=a
+				if a=0 then
+					document.f1.submit()
+				end if
+			end function
+		</script>
+	</head>
+
+	<body>
+		<form action="timeout.html" name="f1">
+			<input type="button" name="b1" value="hi"/>
+			<input type="submit">
+		</form>
+	</body>
+</html>

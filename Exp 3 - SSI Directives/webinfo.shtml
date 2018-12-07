@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<div id="div1" style="position:relative; max-height:inherit">
+			<!--#include file="header.txt"-->
+		</div>
+	
+		<div id="div2" style="position:relative; max-height:inherit">
+			<!--#include file="links.txt"-->
+		</div>
+	
+		<div id="div3" style="position:relative; max-height:inherit">
+			<!--#include file="data_webinfo.txt"-->
+		</div>
+
+		<div id="div4" style="position:relative; max-height:inherit; min-height:800px">
+			<!--#include file="footer.txt"-->
+		</div>
+	
+	</body>
+</html>

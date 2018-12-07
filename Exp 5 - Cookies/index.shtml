@@ -1,0 +1,56 @@
+<head>
+    <script type="text/javascript" >
+        function addtocart()
+        {
+            alert("Change is sucessfully made in Cart")
+        }
+    </script>
+
+    <title>
+        E-Kart | Home
+    </title>
+</head>
+
+<body>
+    <!--#include file="header.html"-->
+    <form method="post" action="cart.asp">
+        <fieldset>
+            <table align="center" border="0">
+                <br />
+                <tr height="100" align="center">
+                    <td><img src="media/books/2014-the-election-that-changed-india-125x125-imadznfpukmf3jbm.jpeg" /></td>
+                    <td><img src="media/books/7-secrets-of-the-goddess-125x125-imadz5hkycqgpjgu.jpeg" /></td>
+                    <td><img src="media/books/99-unforgettable-fiction-non-fiction-poetry-humour-125x125-imadxtzhgwpzqadu.jpeg" /></td>
+                    <td><img src="media/books/colorless-tsukuru-tazaki-and-his-years-of-pilgrimage-125x125-imadwepe3msc3zzn.jpeg" /></td>
+                    <td><img src="media/books/and-then-one-day-125x125-imadyntcpmhqrbce.jpeg" /></td>
+                    <td><img src="media/books/be-careful-what-you-wish-for-125x125-imadsm4j66arwurb.jpeg" /></td>
+                </tr>
+                <tr align="center">
+                    <td width="120">2014 The Elections that Changed India</td>
+                    <td width="120">7 Secrets of the Godess</td>
+                    <td width="120">99 Unforgettavle Fiction Non-Fiction Poetry Humour</td>
+                    <td width="120">Colorless Tsukuru Tazaki and his years of Pilgrimage</td>
+                    <td width="120">And Then One Day</td>
+                    <td width="120">Be Careful What you Wish for</td>
+                </tr>
+                <tr align="center">
+                    <td width="120"><input type="checkbox" id="b1" name="b1" value="b1" onclick="addtocart()"/> Add to Cart</td>
+                    <td width="120"><input type="checkbox" id="b2" name="b2" value="b2" onclick="addtocart()" /> Add to Cart</td>
+                    <td width="120"><input type="checkbox" id="b3" name="b3" value="b3" onclick="addtocart()" /> Add to Cart</td>
+                    <td width="120"><input type="checkbox" id="b4" name="b4" value="b4" onclick="addtocart()" /> Add to Cart</td>
+                    <td width="120"><input type="checkbox" id="b5" name="b5" value="b5" onclick="addtocart()" /> Add to Cart</td>
+                    <td width="120"><input type="checkbox" id="b6" name="b6" value="b6" onclick="addtocart()" /> Add to Cart</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><br /><br /><br /><input type="submit" value="Go to My Cart" id="sbmit" name="sbmit" /></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>    
+    <!--#include file="footer.html"-->
+</body>

@@ -1,0 +1,5 @@
+<body>
+	<div align="left>"
+		<strong>All rights reserved 2014</strong>
+	</div
+</body>

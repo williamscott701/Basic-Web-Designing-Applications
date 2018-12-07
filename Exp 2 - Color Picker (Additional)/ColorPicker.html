@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Color Picker</title>
+        <meta http-equiv="x-ua-compatible" content="IE=10">
+        <script language="vbscript">
+
+			dim a
+
+			function red()
+				set a = document.getelementbyid("bo1")
+				a.text="red"
+			end function
+
+			function orange()
+				set a = document.getelementbyid("bo1")
+				a.text="orange"
+			end function
+
+			function blue()
+				set a = document.getelementbyid("bo1")
+				a.text="blue"
+			end function
+
+			function green()
+				set a = document.getelementbyid("bo1")
+				a.text="green"
+			end function
+
+			function white()
+				set a = document.getelementbyid("bo1")
+				a.text="white"
+			end function
+			
+			function black()
+				set a = document.getelementbyid("bo1")
+				a.text="black"
+			end function
+
+			function brown()
+				set a = document.getelementbyid("bo1")
+				a.text="brown"
+				document.a.bgcolor="red"
+			end function
+
+		</script>
+	</head>
+
+	<body text="#000000" id="bo1" background="Penguins.jpg" name="a">
+    	<p align="center">
+        	<h1> This is a sample Text </h1> 
+        </p>
+		<form>
+        
+            <table border="1" align="center" width="160">
+           
+            	<tr>
+                	<td> red </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="red()" style="background-color:#FF0000"> </td>    
+                </tr>
+                
+            	<tr>
+                	<td> blue </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="blue()" style="background-color:#0000FF"/> </td>     
+                </tr>
+            	
+                <tr>
+                	<td> green </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="green()" style="background-color:#00FF00"/> </td>     
+                </tr>
+            	
+                <tr>
+                	<td> orange </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="orange()" style="background-color:#FF9999"/> </td>
+                </tr>
+            	
+                <tr>
+                	<td> white </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="white()" style="background-color:#FFFFFF"/> </td>  
+                </tr>
+            	
+                <tr>
+                	<td> black </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="black()" style="background-color:#000000"/> </td> 
+                </tr>
+                         .
+                <tr>
+                	<td> brown </td>
+                    <td> <input type="button" name="bu1" align="middle" onClick="brown()" style="background-color:brown"/> </td>            
+                </tr>
+            
+            </table>
+            
+        </form>
+	</body>
+</html>

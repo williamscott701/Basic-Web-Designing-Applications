@@ -1,0 +1,295 @@
+<html>
+
+	<head>
+    	<meta http-equiv="x-ua-compatible" content="IE=10">
+    	<title>Form</title>
+        <script language="vbscript">
+		
+			captch()
+			dim st
+			st=0		
+		
+			function sbmit()
+				name()
+				password()
+				confirmpassword()
+				dob()
+				email()
+				phoneno()
+				captch()
+				set nameid=document.getElementById("name")
+				set passwordid=document.getElementById("pswd")
+				set confirmpasswordid=document.getElementById("cnfrmpswd")
+				set emailid=document.getElementById("email")
+				set phonenoid=document.getElementById("phno")
+				set captchatextid=document.getElementById("capttext")
+				if(nameid.style.bordercolor="white" and passwordid.style.bordercolor="white" and confirmpasswordid.style.bordercolor="white" and emailid.style.bordercolor="white" and phonenoid.style.bordercolor="white" and captchatextid.style.bordercolor="white") then
+					msgbox("Entry Accepted! Sucessfully Registered")
+				end if
+			end function
+			
+			function rando
+				arrimg=Array("captcha(1).png", "captcha(2).png", "captcha(3).png")
+				randomize
+				r=cint((rnd*2)+1)
+				st=r-1
+				p=arrimg(st)
+				set captchaid=document.getElementById("captimg")
+				captchaid.src=p
+			end function
+			
+			
+			function captch()
+				arrtext=Array("c56157ec1", "83tsu", "imagejoke")
+				set captchatextid=document.getElementById("capttext")
+				pt=captchatextid.value
+				if(pt=arrtext(st)) then
+					captchatextid.style.bordercolor="white"
+				else
+					rando()
+					msgbox("Enter Captcha Correctly")
+					captchatextid.style.bordercolor="red"
+				end if
+			end function
+			
+			function name()
+				set nameid=document.getElementById("name")
+				a=nameid.value
+				if(instr(a, "0")<>0 or instr(a, "1")<>0 or instr(a, "2")<>0 or instr(a, "3")<>0 or instr(a, "4")<>0 or instr(a, "5")<>0 or instr(a, "6")<>0 or instr(a, "7")<>0 or instr(a, "8")<>0 or instr(a, "9")<>0 or len(a)=0) then
+					msgbox("Enter correct Name")
+					nameid.style.bordercolor="red"
+				else
+					nameid.style.bordercolor="white"
+				end if
+			end function
+			
+			function password()
+				set passwordid=document.getElementById("pswd")
+				dim v1, a
+				a=passwordid.value
+				v1=len(a)
+				if(v1<6) then
+					msgbox("Password should be of more than 6 characters")
+					passwordid.style.bordercolor="red"
+				else
+					passwordid.style.bordercolor="white"
+				end if
+			end function
+			
+			function confirmpassword()
+				set passwordid=document.getElementById("pswd")
+				set confirmpasswordid=document.getElementById("cnfrmpswd")
+				if(passwordid.value<>confirmpasswordid.value) then
+					msgbox("Password didnt match")
+					confirmpasswordid.style.bordercolor="red"
+				else
+					confirmpasswordid.style.bordercolor="white"
+				end if
+				if(len(confirmpasswordid.value)=0) then
+					msgbox("Confirm Password cannot be left blank")
+					confirmpasswordid.style.bordercolor="red"
+				end if
+			end function
+			
+			function dob()
+				set dayid=document.getElementById("day")
+				set monthid=document.getElementById("month")
+				set yearid=document.getElementById("year")
+				if(isdate(monthid.value & "/" & dayid.value & "/" & yearid.value)) then
+					a=dateserial(yearid.value, monthid.value, dayid.value)
+					b=datediff("yyyy",a,date())
+					dayid.style.bordercolor="white"
+					monthid.style.bordercolor="white"
+					yearid.style.bordercolor="white"
+					if(b<15) then
+						msgbox("Age Not Qualified")
+						dayid.style.bordercolor="red"
+						monthid.style.bordercolor="red"
+						yearid.style.bordercolor="red"
+					else
+						dayid.style.bordercolor="white"
+						monthid.style.bordercolor="white"
+						yearid.style.bordercolor="white"
+					end if
+				else
+					msgbox("Enter a Valid Date")
+					dayid.style.bordercolor="red"
+					monthid.style.bordercolor="red"
+					yearid.style.bordercolor="red"
+				end if
+			end function
+			
+			function email()
+				dim pos1, pos2, pos3,value
+				set emailid=document.getElementById("email")
+				a=emailid.value
+				pos1=InStr(a, "@")
+				pos2=InStrrev(a, ".")
+				pos3=Len(a)
+				if(pos1>pos2 or pos1<"1" or pos2>pos3) then
+					msgbox("Email format is incorrect")
+					emailid.style.bordercolor="red"
+				else
+					emailid.style.bordercolor="white"
+				end if
+			end function
+			
+			function phoneno()
+				dim v1
+				set phonenoid=document.getElementById("phno")
+				a=phonenoid.value
+				v1=len(a)
+				if(v1<>"10") then
+					msgbox("Enter Valid Phone number")
+					phonenoid.style.bordercolor="red"
+				else
+					phonenoid.style.bordercolor="white"
+				end if
+			end function
+			
+		</script>
+    </head>
+
+
+	<body background="DSC_0023.jpg" id="bdy">
+	<form name="f1">
+    	<fieldset>
+        	<legend> Personal Details </legend>
+        	<table>
+            	<tr>
+                	<td width="140" height="40"> Name </td>
+                    <td> <input type="text" size="50" id="name" style="border-color:white"> </td>
+                </tr>
+            	<tr>
+                	<td width="140" height="40"> Password </td>
+                    <td> <input type="password" size="50" id="pswd" style="border-color:white"> </td>
+                </tr>
+            	<tr>
+                	<td width="140" height="40"> Confirm Password </td>
+                    <td> <input type="password" size="50" id="cnfrmpswd" style="border-color:white" > </td>
+                </tr>
+            	<tr>
+                	<td width="140" height="40"> Date of Birth </td>
+                    <td>
+                    	<select id="day">
+                        	<option>01</option>
+                        	<option> 2</option>
+                        	<option> 3</option>
+                        	<option> 4</option>
+                        	<option> 5</option>
+                        	<option> 6</option>
+                        	<option> 7</option>
+                        	<option> 8</option>
+                        	<option> 9</option>
+                        	<option> 10</option>
+                        	<option> 11</option>
+                        	<option> 12</option>
+                        	<option> 13</option>
+                        	<option> 14</option>
+                        	<option> 15</option>
+                        	<option> 16</option>
+                        	<option> 17</option>
+                            <option> 18</option>
+                            <option> 19</option>
+                            <option> 20</option>
+                            <option> 21</option>
+                            <option> 22</option>
+                            <option> 23</option>
+                            <option> 24</option>
+                            <option> 25</option>
+                            <option> 26</option>
+                            <option> 27</option>
+                            <option> 28</option>
+                            <option> 29</option>
+                            <option> 30</option>
+                            <option> 31</option>
+                        </select>
+                    	<select id="month">
+                        	<option>01</option>
+                        	<option> 2</option>
+                        	<option> 3</option>
+                        	<option> 4</option>
+                        	<option> 5</option>
+                        	<option> 6</option>
+                        	<option> 7</option>
+                        	<option> 8</option>
+                        	<option> 9</option>
+                        	<option> 10</option>
+                        	<option> 11</option>
+                        	<option> 12</option>
+                        </select>
+                    	<select id="year">
+                        	<option> 2010</option>
+                            <option> 2009</option>
+                            <option> 2008</option>
+                            <option> 2007</option>
+                            <option> 2006</option>
+                            <option> 2005</option>
+                            <option> 2004</option>
+                            <option> 2003</option>
+                            <option> 2002</option>
+                            <option> 2001</option>
+                            <option> 2000</option>
+                            <option> 1999</option>
+                            <option> 1998</option>
+                            <option> 1997</option>
+                            <option> 1996</option>
+                            <option> 1995</option>
+                            <option> 1994</option>
+                            <option> 1993</option>
+                            <option> 1992</option>
+                            <option> 1991</option>
+                            <option> 1990</option>
+                            <option> 1989</option>
+                            <option> 1988</option>
+                            <option> 1987</option>
+                            <option> 1986</option>
+                            <option> 1985</option>
+                            <option> 1984</option>
+                            <option> 1983</option>
+                            <option> 1982</option>
+                            <option> 1981</option>
+                            <option> 1980</option>
+                            <option> 1979</option>
+                            <option> 1978</option>
+                            <option> 1977</option>
+                        </select> 
+                    </td>
+                </tr>
+            	<tr id="trid">
+                	<td width="140" height="40"> Email address </td>
+                    <td> <input type="text" size="50" id="email" style="border-color:white"> </td>
+                </tr>
+                
+            	<tr>
+                	<td width="140" height="40"> Phone No. </td>
+                    <td> <input type="number" size="50" id="phno" style="border-color:white" > </td>
+                </tr>
+
+                <tr>
+                    	<td>Captcha: </td>
+                        <td><img src="captcha(1).png" height="60" id="captimg"></td>
+                        <td>
+                        <input type="button" name="Generate" value="Generate" onClick="rando()">
+                    </td>
+                    
+				</tr>
+                <tr>
+                <td> </td>
+                    <td>
+                    	<input type="text" size="30" id="capttext" style="border-color:white">
+                    </td>
+                </tr>
+                
+                <tr height="100">
+                <td> </td>
+                     <td align="right"> <input type="reset" name="reset" value="Reset" width="30" style="border-color:white"> </td>
+                    <td> <input type="button" name="subm" value="Submit" onClick="sbmit()" style="border-color:white"> </td>
+                </tr>
+                
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

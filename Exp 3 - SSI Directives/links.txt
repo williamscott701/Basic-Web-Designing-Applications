@@ -1,0 +1,7 @@
+<p style="font-size:20px" align="center">
+	&nbsp; &nbsp; 
+	<a href="home.shtml">Home</a> &nbsp; &nbsp;
+	<a href="serverinfo.shtml"> Server Info </a> &nbsp; &nbsp;
+	<a href="webinfo.shtml"> Website Info </a>&nbsp; &nbsp;
+	<a href="clientinfo.shtml"> Client Info </a>&nbsp; &nbsp;
+</p>

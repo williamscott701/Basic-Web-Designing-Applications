@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<class>
+    <row>
+        <name>Scott</name>
+        <maths>50</maths>
+        <unix>20</unix>
+        <web>49</web>
+        <os>38</os>
+        <toc>46</toc>
+        <ve>38</ve>
+    </row>
+    <row>
+        <name>Dubey</name>
+        <maths>45</maths>
+        <unix>40</unix>
+        <web>45</web>
+        <os>40</os>
+        <toc>40</toc>
+        <ve>45</ve>
+    </row>
+    <row>
+        <name>Pro</name>
+        <maths>38</maths>
+        <unix>35</unix>
+        <web>35</web>
+        <os>35</os>
+        <toc>33</toc>
+        <ve>39</ve>
+    </row>
+    <row>
+        <name>Pit</name>
+        <maths>40</maths>
+        <unix>35</unix>
+        <web>35</web>
+        <os>40</os>
+        <toc>35</toc>
+        <ve>40</ve>
+    </row>
+</class>

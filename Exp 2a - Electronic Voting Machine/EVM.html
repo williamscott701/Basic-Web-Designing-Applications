@@ -1,0 +1,116 @@
+<html>
+	<head>
+    	<script language="vbscript">
+			dim a
+			a=0
+			function incr1()
+				a=a+1
+				document.f1.tx1.value=a
+			end function		
+			
+			dim b
+			b=0
+			function incr2()
+				b=b+1
+				document.f1.tx2.value=b
+			end function			
+			
+			dim c
+			c=0
+			function incr3()
+				c=c+1
+				document.f1.tx3.value=c
+			end function	
+			
+			dim d
+			d=0
+			function incr4()
+				d=d+1
+				document.f1.tx4.value=d
+			end function
+			
+			
+			dim f
+			f=0
+			function incr5
+				f=f+1
+				document.f1.tx5.value=f
+			end function
+			
+			
+			dim g
+			g=0
+			function incr6()
+				g=g+1
+				document.f1.tx6.value=g
+			end function
+			
+			dim h
+			h=0
+			function incr7()
+				h=h+1
+				document.f1.tx7.value=h
+			end function
+			
+		</script>
+	</head>
+
+	<body  background="Penguins.jpg"> 
+    	<br>
+    	<h2 align="center"> Electronic Voting Machine </h2>
+		
+        <form name="f1">
+   			<table width="400" height="84" border="" align="center">
+
+				<tr>
+	                <th> Vote </th>
+                    <th> Party Name </th>
+                    <th> Count </th>
+                </tr>
+
+				<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu1" onClick="incr1()"> </td>
+    				<td> Congress </td>
+					<td> <input type="text"  value="0" name="tx1" width="30" align="middle"> </td>
+  				</tr>	
+      
+      			<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu2" onClick="incr2()"> </td>
+    				<td> BJP </td>
+					<td> <input type="text"  value="0" name="tx2" width="30" align="middle"> </td>
+  				</tr>
+                
+      			<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu3" onClick="incr3()"> </td>
+    				<td> Telugudesam </td>
+					<td> <input type="text"  value="0" name="tx3" width="30" align="middle"> </td>
+  				</tr>          
+                      
+      			<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu4" onClick="incr4()"> </td>
+    				<td> YSR Congress </td>
+					<td> <input type="text"  value="0" name="tx4" width="30" align="middle"> </td>
+  				</tr>          
+                      
+      			<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu5" onClick="incr5()"> </td>
+    				<td> KCR </td>
+					<td> <input type="text"  value="0" name="tx5" width="30" align="middle"> </td>
+  				</tr>          
+                      
+      			<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu6" onClick="incr6()"> </td>
+    				<td> Lok Satta </td>
+					<td> <input type="text"  value="0" name="tx6" width="30" align="middle"> </td>
+  				</tr>
+                
+      			<tr align="center">
+					<td height="78"> <input type="button" value="Vote" name="bu7" onClick="incr7()"> </td>
+    				<td> SFI </td>
+					<td> <input type="text"  value="0" name="tx7" width="30" align="middle"> </td>
+  				</tr>
+                
+    	    </table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+#bck{
+	position:absolute;
+	left:0%;
+	top:0%;
+}
+form{
+	background:rgba(155,155,255,0.8);
+	width:70%;
+	position:relative;
+	left:15%;
+}
+
+body{
+	background-attachment:fixed;
+	background-image:url(DSC_0023.jpg);
+}
+
+fieldset{
+	width:95%;
+	
+}
+
+.links{
+	font-size:100%;
+	font-size:1.4em;
+	position:relative;
+	right:10%;
+	word-spacing:30px;
+}

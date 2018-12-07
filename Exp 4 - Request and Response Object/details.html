@@ -1,0 +1,516 @@
+<html>
+	
+    <head>
+    	<title> Details </title>
+        <script language="javascript" type="text/javascript">
+            function check() {
+                a = name();
+                b = regno();
+                c = subs();
+                d = marks();
+
+                if (a == true && b == true && c == true && d == true)
+                    document.details.submit();
+            }
+            function name() {
+                if (document.details.name.value == "") {
+                    alert("Enter A Valid Name")
+                    return false;
+                }
+                else
+                    return true;
+
+            }
+            function regno() {
+                d = document.details.regno.value
+                if (d == "" || d.length > 9) {
+                    alert("Enter A Valid Register Number")
+                    return false;
+                }
+                else return true;
+            }
+            function marks() {
+                t=1;
+                if (document.details.sub1.value == "") {
+                    t = 0;
+                    alert("Please Provide 1st Subject Grade")
+                }
+                if (document.details.sub2.value == "") {
+                    t = 0;
+                    alert("Please Provide 2nd Subject Grade")
+                }
+                if (document.details.sub3.value == "") {
+                    t = 0;
+                    alert("Please Provide 3rd Subject Grade")
+                }
+                if (document.details.sub4.value == "") {
+                    t = 0;
+                    alert("Please Provide 4th Subject Grade")
+                }
+                if (document.details.sub5.value == "") {
+                    t = 0;
+                    alert("Please Provide 5th Subject Grade")
+                }
+                if (document.details.sub6.value == "") {
+                    t = 0;
+                    alert("Please Provide 6th Subject Grade")
+                }
+                if (document.details.sub7.value == "") {
+                    t = 0;
+                    alert("Please Provide 1st Lab Grade")
+                }
+                if (document.details.sub8.value == "") {
+                    t = 0;
+                    alert("Please Provide 2nd Lab Grade")
+                }
+                if (document.details.sub9.value == "") {
+                    t = 0;
+                    alert("Please Provide 3rd Lab Grade")
+                }
+                if (t == 0)
+                    return false;
+                else
+                    return true;
+            }
+            function subs() {
+                s1 = 0; s2 = 0; s3 = 0; s4 = 0; s5 = 0; s6 = 0; s7 = 0; s8 = 0; s9 = 0; s10 = 0; s11 = 0; s12 = 0; s13 = 0; s14 = 0; s15 = 0; s16 = 0; s17 = 0; s18 = 0; s19 = 0; s20 = 0; s21 = 0; s22 = 0; s23 = 0;
+                subject(document.details.Select1.value)
+                subject(document.details.Select2.value)
+                subject(document.details.Select3.value)
+                subject(document.details.Select4.value)
+                subject(document.details.Select5.value)
+                subject(document.details.Select6.value)
+                subject(document.details.Select7.value)
+                subject(document.details.Select8.value)
+                subject(document.details.Select9.value)
+                if (s1 > 2 || s2 > 2 || s3 > 2 || s4 > 2 || s5 > 2 || s6 > 2 || s7 > 2 || s8 > 2 || s9 > 2 || s10 > 2 || s11 > 2 || s12 > 2 || s13 > 2 || s14 > 2 || s15 > 2 || s16 > 2 || s17 > 2 || s18 > 2 || s19 > 2 || s20 > 2 || s21 > 2 || s22 > 2 || s23 > 2) {
+                    alert("A subject can be selected only once")
+                    return false;
+                }
+                else
+                    return true;
+            }
+
+        function subject(a) {
+            if (a == "Maths") {
+                s1++
+            }
+            if (a == "C++") {
+                s2++
+            }
+            if (a == "Java") {
+                s3++
+            }
+            if (a == "Signals & Systems") {
+                s4++
+            }
+            if (a == "Data Structures") {
+                s5++
+            }
+            if (a == "Web Technology") {
+                s6++
+            }
+            if (a == "Unix") {
+                s7++
+            }
+            if (a == "Database") {
+                s8++
+            }
+            if (a == "Operating System") {
+                s9++
+            }
+            if (a == "EVS") {
+                s10++
+            }
+            if (a == "Chemistry") {
+                s11++
+            }
+            if (a == "Physics") {
+                s12++
+            }
+            if (a == "Value Education") {
+                s13++
+            }
+            if (a == "Unix Lab") {
+                s14++
+            }
+            if (a == "DIC Lab") {
+                s15++
+            }
+            if (a == "Java Lab") {
+                s16++
+            }
+            if (a == "C Lab") {
+                s17++
+            }
+            if (a == "Data Structures Lab") {
+                s18++
+            }
+            if (a == "Web Technology Lab") {
+                s19++
+            }
+            if (a == "Chemistry Lab") {
+                s20++
+            }
+            if (a == "Physics Lab") {
+                s21++
+            }
+            if (a == "Miroprocessor Lab") {
+                s22++
+            }
+            if (a == "DIC Lab") {
+                s23++
+            }
+
+        }
+        </script>
+        
+        
+    <meta http-equiv="x-ua-compatible" content="IE=10">
+
+
+    <script language="vbscript" type="text/vbscript">
+        a=50
+        sub window_onload()
+            timer()
+        end sub
+        
+        function timer()    
+			settimeout "timer()",100
+            a=a-1
+            document.getelementbyid("b1").innertext=a
+            if a=0 then
+                document.details.submit()
+            end if
+        end function
+        
+    </script>  
+    
+	</head>
+    
+	<body background="DSC_0297.jpg">
+    	<input type="text" id="b1">
+        <form name="details" method="post" action="generate.asp">
+            <fieldset>
+                <legend>Details:</legend>
+                <table border="0" align="center">
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            :&nbsp; <input type="text" name="name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Register No.</td>
+                        <td>
+                            :&nbsp; <input type="text" name="regno"/>
+                        </td>
+                    </tr>
+                    
+                     <tr>
+                        <td>Semester</td>
+                        <td> :&nbsp;
+                            <select name="sem">
+                                <option>Even</option>
+                                <option>Odd</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select1">
+                                <option>Maths</option>
+                                <option>C++</option>
+                                <option>Java</option>
+                                <option>Signals & Systems</option>
+                                <option>Data Structures</option>
+                                <option>Web Technology</option>
+                                <option>Unix</option>
+                                <option>TOC</option>
+                                <option>Database</option>
+                                <option>Operating System</option>
+                                <option>EVS</option>
+                                <option>Chemistry</option>
+                                <option>Physics</option>
+                                <option>Value Education</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub1"  value="1"/>
+                            2<input type="radio" name="sub1"  value="2"/>
+                            3<input type="radio" name="sub1"  value="3"/>
+                            4<input type="radio" name="sub1"  value="4"/>
+                            5<input type="radio" name="sub1"  value="5"/>
+                            6<input type="radio" name="sub1"  value="6"/>
+                            7<input type="radio" name="sub1"  value="7"/>
+                            8<input type="radio" name="sub1" value="8" />
+                            9<input type="radio" value="9" name="sub1" />
+                            10<input type="radio"value="10" name="sub1" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select2">
+                                <option>Maths</option>
+                                <option>C++</option>
+                                <option>Java</option>
+                                <option>Signals & Systems</option>
+                                <option>Data Structures</option>
+                                <option>Web Technology</option>
+                                <option>Unix</option>
+                                <option>TOC</option>
+                                <option>Database</option>
+                                <option>Operating System</option>
+                                <option>EVS</option>
+                                <option>Chemistry</option>
+                                <option>Physics</option>
+                                <option>Value Education</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub2"  value="1"/>
+                            2<input type="radio" name="sub2"  value="2"/>
+                            3<input type="radio" name="sub2"  value="3"/>
+                            4<input type="radio" name="sub2"  value="4"/>
+                            5<input type="radio" name="sub2"  value="5"/>
+                            6<input type="radio" name="sub2"  value="6"/>
+                            7<input type="radio" name="sub2"  value="7"/>
+                            8<input type="radio" name="sub2" value="8" />
+                            9<input type="radio" value="9" name="sub2" />
+                            10<input type="radio"value="10" name="sub2" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select3">
+                                <option>Maths</option>
+                                <option>C++</option>
+                                <option>Java</option>
+                                <option>Signals & Systems</option>
+                                <option>Data Structures</option>
+                                <option>Web Technology</option>
+                                <option>Unix</option>
+                                <option>TOC</option>
+                                <option>Database</option>
+                                <option>Operating System</option>
+                                <option>EVS</option>
+                                <option>Chemistry</option>
+                                <option>Physics</option>
+                                <option>Value Education</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub3"  value="1"/>
+                            2<input type="radio" name="sub3"  value="2"/>
+                            3<input type="radio" name="sub3"  value="3"/>
+                            4<input type="radio" name="sub3"  value="4"/>
+                            5<input type="radio" name="sub3"  value="5"/>
+                            6<input type="radio" name="sub3"  value="6"/>
+                            7<input type="radio" name="sub3"  value="7"/>
+                            8<input type="radio" name="sub3" value="8" />
+                            9<input type="radio" value="9" name="sub3" />
+                            10<input type="radio"value="10" name="sub3" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select4">
+                                <option>Maths</option>
+                                <option>C++</option>
+                                <option>Java</option>
+                                <option>Signals & Systems</option>
+                                <option>Data Structures</option>
+                                <option>Web Technology</option>
+                                <option>Unix</option>
+                                <option>TOC</option>
+                                <option>Database</option>
+                                <option>Operating System</option>
+                                <option>EVS</option>
+                                <option>Chemistry</option>
+                                <option>Physics</option>
+                                <option>Value Education</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub4"  value="1"/>
+                            2<input type="radio" name="sub4"  value="2"/>
+                            3<input type="radio" name="sub4"  value="3"/>
+                            4<input type="radio" name="sub4"  value="4"/>
+                            5<input type="radio" name="sub4"  value="5"/>
+                            6<input type="radio" name="sub4"  value="6"/>
+                            7<input type="radio" name="sub4"  value="7"/>
+                            8<input type="radio" name="sub4" value="8" />
+                            9<input type="radio" value="9" name="sub4" />
+                            10<input type="radio"value="10" name="sub4" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select5">
+                                <option>Maths</option>
+                                <option>C++</option>
+                                <option>Java</option>
+                                <option>Signals & Systems</option>
+                                <option>Data Structures</option>
+                                <option>Web Technology</option>
+                                <option>Unix</option>
+                                <option>TOC</option>
+                                <option>Database</option>
+                                <option>Operating System</option>
+                                <option>EVS</option>
+                                <option>Chemistry</option>
+                                <option>Physics</option>
+                                <option>Value Education</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub5"  value="1"/>
+                            2<input type="radio" name="sub5"  value="2"/>
+                            3<input type="radio" name="sub5"  value="3"/>
+                            4<input type="radio" name="sub5"  value="4"/>
+                            5<input type="radio" name="sub5"  value="5"/>
+                            6<input type="radio" name="sub5"  value="6"/>
+                            7<input type="radio" name="sub5"  value="7"/>
+                            8<input type="radio" name="sub5" value="8" />
+                            9<input type="radio" value="9" name="sub5" />
+                            10<input type="radio"value="10" name="sub5" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select6">
+                                <option>Maths</option>
+                                <option>C++</option>
+                                <option>Java</option>
+                                <option>Signals & Systems</option>
+                                <option>Data Structures</option>
+                                <option>Web Technology</option>
+                                <option>Unix</option>
+                                <option>TOC</option>
+                                <option>Database</option>
+                                <option>Operating System</option>
+                                <option>EVS</option>
+                                <option>Chemistry</option>
+                                <option>Physics</option>
+                                <option>Value Education</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub6"  value="1"/>
+                            2<input type="radio" name="sub6"  value="2"/>
+                            3<input type="radio" name="sub6"  value="3"/>
+                            4<input type="radio" name="sub6"  value="4"/>
+                            5<input type="radio" name="sub6"  value="5"/>
+                            6<input type="radio" name="sub6"  value="6"/>
+                            7<input type="radio" name="sub6"  value="7"/>
+                            8<input type="radio" name="sub6" value="8" />
+                            9<input type="radio" value="9" name="sub6" />
+                            10<input type="radio"value="10" name="sub6" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select7">
+                                <option>Unix Lab</option>
+                                <option>DIC Lab</option>
+                                <option>Java Lab</option>
+                                <option>C Lab</option>
+                                <option>Data Structures Lab</option>
+                                <option>Web Technology Lab</option>
+                                <option>Chemistry Lab</option>
+                                <option>Physics Lab</option>
+                                <option>Miroprocessor Lab</option>
+                                <option>DIC Lab</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub7"  value="1"/>
+                            2<input type="radio" name="sub7"  value="2"/>
+                            3<input type="radio" name="sub7"  value="3"/>
+                            4<input type="radio" name="sub7"  value="4"/>
+                            5<input type="radio" name="sub7"  value="5"/>
+                            6<input type="radio" name="sub7"  value="6"/>
+                            7<input type="radio" name="sub7"  value="7"/>
+                            8<input type="radio" name="sub7" value="8" />
+                            9<input type="radio" value="9" name="sub7" />
+                            10<input type="radio"value="10" name="sub7" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select8">
+                                <option>Unix Lab</option>
+                                <option>DIC Lab</option>
+                                <option>Java Lab</option>
+                                <option>C Lab</option>
+                                <option>Data Structures Lab</option>
+                                <option>Web Technology Lab</option>
+                                <option>Chemistry Lab</option>
+                                <option>Physics Lab</option>
+                                <option>Miroprocessor Lab</option>
+                                <option>DIC Lab</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub8"  value="1"/>
+                            2<input type="radio" name="sub8"  value="2"/>
+                            3<input type="radio" name="sub8"  value="3"/>
+                            4<input type="radio" name="sub8"  value="4"/>
+                            5<input type="radio" name="sub8"  value="5"/>
+                            6<input type="radio" name="sub8"  value="6"/>
+                            7<input type="radio" name="sub8"  value="7"/>
+                            8<input type="radio" name="sub8" value="8" />
+                            9<input type="radio" value="9" name="sub8" />
+                            10<input type="radio"value="10" name="sub8" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <select name="Select9">
+                                <option>Unix Lab</option>
+                                <option>DIC Lab</option>
+                                <option>Java Lab</option>
+                                <option>C Lab</option>
+                                <option>Data Structures Lab</option>
+                                <option>Web Technology Lab</option>
+                                <option>Chemistry Lab</option>
+                                <option>Physics Lab</option>
+                                <option>Miroprocessor Lab</option>
+                                <option>DIC Lab</option>
+                            </select>
+                        </td>
+                        <td> :
+                            1<input type="radio" name="sub9"  value="1"/>
+                            2<input type="radio" name="sub9"  value="2"/>
+                            3<input type="radio" name="sub9"  value="3"/>
+                            4<input type="radio" name="sub9"  value="4"/>
+                            5<input type="radio" name="sub9"  value="5"/>
+                            6<input type="radio" name="sub9"  value="6"/>
+                            7<input type="radio" name="sub9"  value="7"/>
+                            8<input type="radio" name="sub9" value="8" />
+                            9<input type="radio" value="9" name="sub9" />
+                            10<input type="radio"value="10" name="sub9" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="button" onclick=check() value="Generate"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

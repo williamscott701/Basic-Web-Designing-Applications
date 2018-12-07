@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=10">
+    <title>Clock</title>
+    <script language="vbscript" type="text/vbscript">
+		i=0
+		t=0
+		function begin()
+			i=0
+			t=0
+			starti()
+			
+		end function
+		
+        function starti()
+			if(t=0) then
+            settimeout "starti()",1000
+            document.getelementbyid("b1").value=i
+			i=i+1
+			end if 
+        end function
+        
+		function endi()
+			t=1
+		end function
+    </script>
+</head>
+<body>
+<input type="text" id="b1">
+<input type="button" onclick="begin()" value="Start">
+<input type="button" onclick="endi()" value="stop">
+</body>
+</html>

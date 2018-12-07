@@ -1,0 +1,3 @@
+<body align="center">
+	<h1><strong>Photography Tips</strong</h1>
+</body>

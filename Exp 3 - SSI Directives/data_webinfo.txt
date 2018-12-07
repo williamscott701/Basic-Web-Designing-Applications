@@ -1,0 +1,24 @@
+<body bgcolor="#FFFFCC">
+	<table border="1" align="center" width="50%">
+		<tr>
+			<th width="20%"> Variable Name </th>
+			<th width="80%"> Result </th>
+		</tr>
+		<tr>
+			<td> Path Info </td>
+			<td> <!--#echo var="PATH_INFO" --> </td>
+		</tr>
+		<tr>
+			<td> Document Name </td>
+			<td> <!--#echo var="DOCUMENT_NAME" --> </td>
+		</tr>
+		<tr>
+			<td> Document URI </td>
+			<td> <!--#echo var="DOCUMENT_URI" --> </td>
+		</tr>
+		<tr>
+			<td> Last Modified </td>
+			<td> <!--#echo var="LAST_MODIFIED" --> </td>
+		</tr>
+	</table>
+</body>

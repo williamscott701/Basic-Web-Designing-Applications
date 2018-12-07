@@ -1,0 +1,24 @@
+<body bgcolor="#FFFFCC">
+	<table border="1" align="center" width="50%">
+		<tr>
+			<th width="10%"> Variable Name </th>
+			<th width="10%"> Result </th>
+		</tr>
+		<tr>
+			<td> Server Name </td>
+			<td> <!--#echo var="SERVER_NAME" --> </td>
+		</tr>
+		<tr>
+			<td> Server Port </td>
+			<td> <!--#echo var="SERVER_PORT" --> </td>
+		</tr>
+		<tr>
+			<td> Server Protocol </td>
+			<td> <!--#echo var="SERVER_PROTOCOL" --> </td>
+		</tr>
+		<tr>
+			<td> Server Software </td>
+			<td> <!--#echo var="SERVER_SOFTWARE" --> </td>
+		</tr>
+	</table>
+</body>

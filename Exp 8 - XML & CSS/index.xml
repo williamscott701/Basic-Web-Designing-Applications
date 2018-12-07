@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<resume>
+  <maintitle>Résumé</maintitle>
+  <personal>
+    <head>Personal Details</head>
+      <tp>
+          <photo></photo>
+      </tp>
+  
+    <cname>
+      <title>Candidate Name</title>
+      <data>: Oliver Queen</data>
+    </cname>
+    
+    <fname>
+      <title>Father's Name</title>
+      <data>: Robert Queen</data>
+    </fname>
+
+    <dob>
+      <title>Date of Birth</title>
+      <data>: 20-07-1994</data>
+    </dob>
+    
+    <address>
+      <title>Address</title>
+      <data>: 4-285, Starling City, US</data>
+    </address>
+    
+    <mobile>
+      <title>Mobile</title>
+      <data>: 7845108300</data>
+    </mobile>
+    
+    <email>
+      <title>Email</title>
+      <data>: oliverqueen@gmail.com</data>
+    </email>
+  </personal>
+  
+  <objective>
+    <head>Objective</head>
+    <data>
+	    I would like a career that gives me rich exposure through diverse assignment  and working with people of high caliber.I would constantly look out    for chaallenges, which would help me to achieve my personal and professional goals. 
+	  </data>
+  </objective>
+  
+  <academic>
+    <head>Academic Details</head>
+    <scoring>
+      <header>
+        <std>STD</std>
+        <school>School</school>
+        <percentage>Percentage</percentage>
+        <year>Year</year>
+      </header>
+      <tenth>
+        <std>10th</std>
+        <school>D.P.S</school>
+        <percentage>93</percentage>
+        <year>2010</year>
+      </tenth>
+      <twelfth>
+        <std>12th</std>
+        <school>D.P.S</school>
+        <percentage>90</percentage>
+        <year>2012</year>
+      </twelfth>
+      <btech>
+        <std>B.tech</std>
+        <school>Karunya University</school>
+        <percentage>85</percentage>
+        <year>2016</year>
+      </btech>
+    </scoring>
+  </academic>
+  
+  <skills>
+    <head>Skills</head>
+    <programming>
+      <title>Programming</title>
+      <data>C, C++, Java, C#, Python </data>
+    </programming>
+    <web>
+      <title>Web Development</title>
+      <data>HTML, CSS, XML, PHP, Javascript, Vbscript, ASP</data>
+    </web>
+    <networking>
+      <title>Networking</title>
+      <data>Switch-Router Handling, Network Security</data>
+    </networking>
+    <database>
+      <title>Database</title>
+      <data>Oracle 10g/11g, MySQL</data>
+    </database>
+    <os>
+      <title>Operating System</title>
+      <data>Linux, Windows XP/7/8/8.1/10</data>
+    </os>
+  </skills>
+
+    <extra>
+        <head>Extra Details</head>
+        <hobbies>
+            <title>Hobbies</title>
+            <data>Trekking, Hiking, Photography, Music</data>
+        </hobbies>
+        <conclusion>
+            <title>Conclusion</title>
+            <data>The information mentioned above are true based on my knowledge</data>
+        </conclusion>
+    </extra>
+    <developer>Developed By WS</developer>
+</resume>
